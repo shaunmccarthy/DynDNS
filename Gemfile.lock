@@ -21,7 +21,6 @@ GEM
     nokogiri (1.6.0-x86-mingw32)
       mini_portile (~> 0.5.0)
     ntlm-http (0.1.1)
-    parseconfig (1.0.2)
     tlsmail (0.0.1)
     unf (0.1.1)
       unf_ext
@@ -33,5 +32,4 @@ PLATFORMS
 
 DEPENDENCIES
   mechanize
-  parseconfig
   tlsmail
