@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="viewport" content="width=device-width">
+<title>My Dyn Account</title>
+<meta name="description" content="DynDNS account login and overview. Proceed to My Services page to get detailed look." />
+<meta name="keywords" content="dyndns account" />
+<link rel="icon" href="https://a.dyndns.com/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://a.dyndns.com/favicon.ico" type="image/png" />
+<link rel="stylesheet" type="text/css" href="https://a.dyndns.com/css/style.css?v=130515" id="curstyle" title="Web"/>
+<style type='text/css'>
+.col { width: 33%; float: left; margin: 0; padding: 0; overflow: hidden;font-family:'P22UndergroundBook',"Lucida Grande",Tahoma,Arial,sans-serif; }
+.collist { margin-right: 4px; padding-right: 4px; border-right: 1px solid #e5e5e5; margin-bottom: 10px }
+.last { margin-right: 0; padding-right: 0; border-right: 0 }
+.colheader { width: auto; background: #ffe url(https://a.dyndns.com/images/account/bodynav-bg.gif) repeat-x 0 0 }
+a.coltop { width: auto; background:none; margin-right: 0px; display: block; padding: 5px 10px; text-decoration: none; color: #0066cc; overflow: hidden; min-height: 38px;font-family:"Lucida Grande",Tahoma,Arial,sans-serif; }
+a.coltop:hover {color:#0000ff}
+* html .coltop { height: 60px; overflow: auto }
+a.services { background-position: 0 -100px }
+a.settings { background-position: 0 -200px }
+a.services:hover { background-position: 0 -400px }
+a.settings:hover { background-position: 0 -500px }
+a.billing:hover { background-position: 0 -300px }
+.navicon { border: none; float: left; margin: 4px 2px 8px 5px; position: absolute }
+#sidenav-content h2.nav {-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;border: 0; font-size: 1.3em; color: #000; padding: 5px 0 1px 8px; text-decoration: none; font-weight:normal; background-color: #fee25e; margin: 0; overflow: hidden; height: 1.6em; border-top: 1px solid #fff }
+#sidenav-content p { padding-top: 2px; padding-bottom: 0; margin-top: 0 }
+.col ul, .col li { margin: 0; padding: 0; list-style: none; width: auto; }
+.col li { border-top: 1px solid #e5e5e5 }
+* html .col li { height: 2em }
+.col li a { padding: 2px 0 2px 16px; display: block;color: #333;text-decoration: none; font-size: 1.2em;}
+.col li li a { padding-left: 30px;color:#666;font-size: 1.1em; }
+.col li a:hover { background: #fff925;color: #333;}
+</style>
+<link rel="openid2.provider" href="https://account.dyn.com/openid/openid.html" />
+<link rel="openid2.local_id" href="http://specs.openid.net/auth/2.0/identifier_select" />
+</head>
+<body id="dyndnsbody" >
+<div id="header">
+<a href="#menutitle" id="goBottom">Menu</a>
+<ul id="rnav">
+<li id="rlogo"><a href="http://dyn.com/">Dyn</a></li>
+<li id="nav-dns"><a href="http://dyn.com/dns/">DNS</a></li>
+<li id="nav-email"><a href="http://dyn.com/email/">Email</a></li>
+<li id="nav-labs"><a href="http://dyn.com/dns/dyndns-pro">Remote Access</a></li>
+</ul>
+<ul id="rutilities">
+<li id="rhelp"><a href="http://dyn.com/support/">Support</a></li>
+<li class="rabout"><a href="http://dyn.com/about/">About</a></li>
+<li><a href="http://dyn.com/blog/">Blog</a></li>
+</ul>
+<ul class="rconnect">
+<li class="rsocial ruk"><a href="http://dyn.com/about/dyn-uk/">UK</a></li>
+<li class="rsocial rtwitter"><a href="http://twitter.com/dyninc">Twitter</a></li>
+<li class="rsocial rfacebook"><a href="http://www.facebook.com/Dyn">Facebook</a></li>
+</ul>
+</div>
+<div id="navcontainer">
+<div id="topnavbox"><div id="topnav">
+<span>Welcome&nbsp;<b>slyrp</b></span>
+<a class='usertype-free' href='http://dyn.com/dns/free-vs-vip/'>&nbsp;free&nbsp;</a>
+<a href="/services/" class="nav_button" id="myServicesButton">My Services</a>
+<a href="/cart/" class="nav_button light">My Cart</a>
+<a href="/entrance/?__logout=1" class="nav_button">Log Out</a>
+</div></div>
+</div>
+<div id="everything">
+<div id="uncredited_banner">
+<p><!-- 7
+--><a href='/ad/freeloaderbanner/dns/dynect-managed-dns-lite/?content='>DynECT Managed DNS Lite</a> - an affordable Anycast DNS option for smart businesses positioning themselves to be the next big thing on the web.</p>
+</div>
+<div id="everything_content">
+<div id="sidenav-content" class="main-content">
+<div class="col uno">
+<div class="collist">
+<h2 class="nav">My Services</h2>
+<div class="colheader">
+<a href="services/" class="coltop services">View, modify, purchase, and delete your services.</a>
+</div>
+<ul>
+<li><a href="/services/zones/">My Zones/Domains</a>
+<ul>
+<li><a href="/services/zones/svc/add.html">Add Zone/Domain Services</a></li>
+</ul>
+</li>
+<li><a href="/dns/dyndns/?via=hostlink">My Hosts</a>
+<ul>
+<li><a href="/dns/dyndns/add.html">Add Host Services</a></li>
+</ul>
+</li>
+<li><a href="/dns/dyndns/?via=prolink">DynDNS Pro</a></li>
+<li><a href="/dns/dynect-managed-dns-lite/">DynECT Managed DNS Lite</a></li>
+<li><a href="/labs/dyn-internet-guide/">Internet Guide</a></li>
+<li><a href="http://dyn.com/support/">Support</a>
+<ul>
+<li><a href="/support/contact/">Contact Support</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="col dos">
+<div class="collist">
+<h2 class="nav">Billing</h2>
+<div class="colheader">
+<a href="billing/" class="coltop billing">Update your billing information, complete a purchase, and view invoices.</a>
+</div>
+<ul>
+<li><a href="/cart/">View Shopping Cart</a></li>
+<li><a href="/billing/services/">Active Services</a></li>
+<li><a href="/billing/history/">Order History</a></li>
+<li><a href="/billing/profile.html">Billing Profile and Vouchers</a></li>
+<li><a href="/renew/">Renew Services</a></li>
+<li><a href="/autorenew/">Auto Renew Settings</a></li>
+<li><a href="/sync/">Sync Expirations</a></li>
+</ul>
+</div>
+</div>
+<div class="col tre">
+<div class="collist last">
+<h2 class="nav">Account Settings</h2>
+<div class="colheader">
+<a href="/profile/" class="coltop settings">Update your email address, set preferences, and delete your account.</a>
+</div>
+<ul>
+<li><a href="/profile/email.html">Change Email Address</a></li>
+<li><a href="/profile/password.html">Change Password</a></li>
+<li><a href="/profile/changeusername.html">Change Username</a></li>
+<li><a href="/contact/">Contact Manager</a></li>
+<li><a href="/profile/mailinglist.html">Mailing Lists</a></li>
+<li><a href="/profile/moveservices.html">Move Services</a></li>
+<li><a href="/profile/prefs.html">Preferences</a></li>
+<li><a href="/profile/close.html">Close Account</a></li>
+</ul>
+</div>
+</div>
+<br />
+</div>
+<div class="secondaryNav">
+<div id="sidenav">
+<ul>
+<h4 class="nav" id="menutitle">Menu</h4>
+<a href="#header" id="toTop"><span>&uarr;</span>&nbsp;To Top</a>
+<li class="nav-title"><a href="/">My Account</a></li>
+<li class="nav-first"><a href="/services/">My Services</a></li>
+<li class="nav-first"><a href="/profile/">Account Settings</a></li>
+<li class="nav-first"><a href="/billing/">Billing</a></li>
+</ul>
+</div>
+<div id="cart">
+<a href="/cart/">
+<strong>My Cart</strong>
+<span>0 items</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="rfooter">
+<dl>
+<dt>About Dyn</dt>
+<dd><a href="http://dyn.com/about/">Our Story</a></dd>
+<dd><a href="http://dyn.com/about/careers/">Careers</a></dd>
+<dd><a href="http://dyn.com/clients/">Clients</a></dd>
+<dd><a href="http://dyn.com/about/events/">Events</a></dd>
+</dl>
+<dl>
+<dt>Get Help</dt>
+<dd><a href="http://dyn.com/support/">Support Knowledgebase</a></dd>
+<dd><a href="http://dynstatus.com/">Dyn Status</a></dd>
+<dd><a href="http://www.dyndnscommunity.com">Dyn Community Forum</a></dd>
+</dl>
+<dl class="connect">
+<dt>Connect with Us!</dt>
+<dd class="rsocial rtwitter"><a href="http://twitter.com/dyninc">Twitter</a></dd>
+<dd class="rsocial rfacebook"><a href="http://www.facebook.com/Dyn">Facebook</a></dd>
+<dd class="rsocial ryoutube"><a href="http://www.youtube.com/dyninc">YouTube</a></dd>
+<dd class="rsocial rlinkedin"><a href="http://www.linkedin.com/company/dynamic-network-services-inc.">LinkedIn</a></dd>
+<dd class="rsocial remail-us"><a href="http://dyn.com/newsletter-subscribe/">Sign up to receive our monthly eNewsletter &raquo;</a></dd>
+</dl>
+<dl class="address">
+<dt>Dyn</dt>
+<dd>150 Dow Street</dd>
+<dd>Manchester, NH 03101</dd>
+<dd>+1 603.668.4998</dd>
+<dd><a href="http://dyn.com/contact-us">Contact Us &raquo;</a></dd>
+</dl>
+<p class="copyright"><small id='pagedone'>&copy;</small>&nbsp;1998-2013 Dyn &mdash; <a href="http://dyn.com/legal/">Legal Notices</a> &mdash; <span><a href="http://dyn.com/legal/dyn-privacy-policy/" class="truste">TRUSTe Certified Privacy</a></span></p>
+</div>
+<script type="text/javascript">
+var pageTracker=false;var _gaq=_gaq||[];_gaq.push(['_setAccount', 'UA-210032-29']);_gaq.push(['_setDomainName', 'dyn.com']);_gaq.push(['_addIgnoredRef', 'dyn.com']);_gaq.push(['_trackPageview']);function labwait(code){ return setTimeout(function(){labwait(code)},50) }function jqwait(code){ return setTimeout(function(){jqwait(code)},50) }function formwait(code){ return setTimeout(function(){formwait(code)},50) }function dynevent(a,b,c){ return setTimeout(function(){dynevent(a,b,c)},50) }function dynpageview(a){ return setTimeout(function(){dynpageview(a)},50) }function dynsessionvalue(a,b,c){ return setTimeout(function(){dynsessionvalue(a,b,c)},50) }function initload(){
+var l=document.createElement('script');l.type='text/javascript';l.async=true;l.src='https://a.dyndns.com/js/labbase.20121008.min.js';
+var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(l, s);};
+if (window.addEventListener) window.addEventListener('load', initload, false); else window.attachEvent('onload', initload);
+</script><script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1072525538;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = 'ToscCNTLugIQ4uG1_wM';
+var google_conversion_value = 0;
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="https://www.googleadservices.com/pagead/conversion/1072525538/?label=ToscCNTLugIQ4uG1_wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<script type="text/javascript">
+var _kiq = _kiq || [];
+_kiq.push(['identify', '7069506']);
+</script>
+<script type="text/javascript" src="//s3.amazonaws.com/ki.js/24457/4S0.js" async="true"></script>
+<script type="text/javascript">
+adroll_adv_id = "4OO5VCGX7RHIZFZPKPZIFY";
+adroll_pix_id = "X3FNLBTUSRDZBKHM4CG5SE";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+__adroll_loaded=true;
+var scr = document.createElement("script");
+var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+scr.setAttribute('async', 'true');
+scr.type = "text/javascript";
+scr.src = host + "/j/roundtrip.js";
+((document.getElementsByTagName('head') || [null])[0] ||
+document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+if(oldonload){oldonload()}};
+}());
+</script>
+<script type="text/javascript">
+var _aaq = _aaq || [];
+_aaq.push(
+['setApptegicAccount', 'dyn3'],
+['setDataset', 'accountdyn'],
+['setUseSiteConfig', true],
+['setUser', '7069506'],
+['setAccountType', 'freeloader'],
+['setCustomField', 'flag_has_hosts', '1', 'visit'],
+['setCustomField', 'spent', '0.00', 'visit']
+);
+(function(){
+var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+g.type = 'text/javascript'; g.defer = true; g.async = true;
+g.src = document.location.protocol + '//dyn3.apptegic.com/scripts/apptegic-tw.min.js';
+s.parentNode.insertBefore(g, s);
+})();
+</script>
+</body>
+</html>
+<!-- page generated successfully -->
