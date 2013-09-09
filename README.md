@@ -27,13 +27,15 @@ Steps for local installation:
    
 3) Configure it to run locally
 
-   > set dyndns_username=yourdyndnsusername
-   > set dyndns_password=yourdyndnspassword
+   Note: on some systems, you need to use `export`, not `set`.
    
+   > set dyndns_username=yourdyndnsusername  
+   > set dyndns_password=yourdyndnspassword
+
    If you want to be emailed whenever there is an error:
    
-   > set error_email_from=a.dummy.account@gmail.com
-   > set error_email_from_password=notyourmainaccountunlessyoulikebeinghacked
+   > set error_email_from=a.dummy.account@gmail.com  
+   > set error_email_from_password=notyourmainaccountunlessyoulikebeinghacked  
    > set error_email_to=your.normal.email@whereever.com
 
 4) Install the package locally (make sure you have installed the bundler first)
@@ -47,6 +49,21 @@ Steps for local installation:
 4) Test it locally with 
 
    > ruby dyndns_login.rb
+
+5) Optional: add a `.bash` file where you set the environment variables, and start if from crontab.
+   
+   Weekly crontab entry (edit using `crontab -e`):
+
+    @weekly /bin/bash ~/dyndns_login.bash
+
+   `~/dyndns_login.bash` file:
+
+    #!/bin/bash
+    #http://www.thegeekstuff.com/2011/07/cron-every-5-minutes/
+    #http://stackoverflow.com/questions/15557777/crontab-job-does-not-get-the-environment-variables-set-in-bashrc-file
+    export dyndns_username=foo
+    export dyndns_password=baz
+    ruby ~/DynDNS/dyndns_login.rb 
 
 Remote Installation: Heroku
 ---------------------------
@@ -72,14 +89,14 @@ Remote Installation: Heroku
 
 4) Set the environment variables
 
-   > heroku config:set dyndns_username=yourdyndnsusername
+   > heroku config:set dyndns_username=yourdyndnsusername  
    > heroku config:set dyndns_password=yourdyndnspassword
    
    If you want to be emailed whenever there is an error:
    
-   > heroku config:set error_email_from=a.dummy.account@gmail.com
-   > heroku config:set error_email_from_password=notyourmainaccountunlessyoulikebeinghacked
-   > heroku config:set error_email_to=your.normal.email@whereever.com
+   > heroku config:set error_email_from=a.dummy.account@gmail.com  
+   > heroku config:set error_email_from_password=notyourmainaccountunlessyoulikebeinghacked  
+   > heroku config:set error_email_to=your.normal.email@whereever.com  
 
 5) Test the code on Heroku
 
