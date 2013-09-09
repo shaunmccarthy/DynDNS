@@ -74,14 +74,14 @@ Remote Installation: Heroku
 
 4) Set the environment variables
 
-   > heroku config:set dyndns_username=yourdyndnsusername
+   > heroku config:set dyndns_username=yourdyndnsusername  
    > heroku config:set dyndns_password=yourdyndnspassword
    
    If you want to be emailed whenever there is an error:
    
-   > heroku config:set error_email_from=a.dummy.account@gmail.com
-   > heroku config:set error_email_from_password=notyourmainaccountunlessyoulikebeinghacked
-   > heroku config:set error_email_to=your.normal.email@whereever.com
+   > heroku config:set error_email_from=a.dummy.account@gmail.com  
+   > heroku config:set error_email_from_password=notyourmainaccountunlessyoulikebeinghacked  
+   > heroku config:set error_email_to=your.normal.email@whereever.com  
 
 5) Test the code on Heroku
 
