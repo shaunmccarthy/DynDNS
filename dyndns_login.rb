@@ -8,6 +8,22 @@ require 'bundler/setup'
 # For browser automation
 require 'mechanize'
 
+# Get rid of warning messages, see http://stackoverflow.com/questions/8783400/warning-already-initialized-constant-after-installing-tlsmail-gem/9117903#9117903
+#/usr/lib64/ruby/gems/1.9.1/gems/tlsmail-0.0.1/lib/net/smtp.rb:806: warning: already initialized constant SMTPSession
+#/usr/lib64/ruby/gems/1.9.1/gems/tlsmail-0.0.1/lib/net/pop.rb:687: warning: already initialized constant POP
+#/usr/lib64/ruby/gems/1.9.1/gems/tlsmail-0.0.1/lib/net/pop.rb:688: warning: already initialized constant POPSession
+#/usr/lib64/ruby/gems/1.9.1/gems/tlsmail-0.0.1/lib/net/pop.rb:689: warning: already initialized constant POP3Session
+#/usr/lib64/ruby/gems/1.9.1/gems/tlsmail-0.0.1/lib/net/pop.rb:702: warning: already initialized constant APOPSession
+require 'net/smtp'
+Net.instance_eval {remove_const :SMTPSession} if defined?(Net::SMTPSession)
+
+require 'net/pop'
+Net::POP.instance_eval {remove_const :Revision} if defined?(Net::POP::Revision)
+Net.instance_eval {remove_const :POP} if defined?(Net::POP)
+Net.instance_eval {remove_const :POPSession} if defined?(Net::POPSession)
+Net.instance_eval {remove_const :POP3Session} if defined?(Net::POP3Session)
+Net.instance_eval {remove_const :APOPSession} if defined?(Net::APOPSession)
+
 # To send out logging emails
 require 'tlsmail'
 require 'time'
@@ -45,6 +61,9 @@ begin
   else
     # Throw an error
     puts "Unable to login"
+    puts "username=#{dyndns_username}"
+    puts "password=#{dyndns_password}"
+    # puts result
     raise "Failed to Login"
   end
 
