@@ -50,6 +50,21 @@ Steps for local installation:
 
    > ruby dyndns_login.rb
 
+5) Optional: add a `.bash` file where you set the environment variables, and start if from crontab.
+   
+   Weekly crontab entry (edit using `crontab -e`):
+
+    @weekly /bin/bash ~/dyndns_login.bash
+
+   `~/dyndns_login.bash` file:
+
+    #!/bin/bash
+    #http://www.thegeekstuff.com/2011/07/cron-every-5-minutes/
+    #http://stackoverflow.com/questions/15557777/crontab-job-does-not-get-the-environment-variables-set-in-bashrc-file
+    export dyndns_username=foo
+    export dyndns_password=baz
+    ruby ~/DynDNS/dyndns_login.rb 
+
 Remote Installation: Heroku
 ---------------------------
 
