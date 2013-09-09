@@ -27,13 +27,15 @@ Steps for local installation:
    
 3) Configure it to run locally
 
-   > set dyndns_username=yourdyndnsusername
-   > set dyndns_password=yourdyndnspassword
+   Note: on some systems, you need to use `export`, not `set`.
    
+   > set dyndns_username=yourdyndnsusername  
+   > set dyndns_password=yourdyndnspassword
+
    If you want to be emailed whenever there is an error:
    
-   > set error_email_from=a.dummy.account@gmail.com
-   > set error_email_from_password=notyourmainaccountunlessyoulikebeinghacked
+   > set error_email_from=a.dummy.account@gmail.com  
+   > set error_email_from_password=notyourmainaccountunlessyoulikebeinghacked  
    > set error_email_to=your.normal.email@whereever.com
 
 4) Install the package locally (make sure you have installed the bundler first)
